@@ -2,8 +2,9 @@ import React from "react";
 import "./Sidebar.css";
 import { Link } from "react-router-dom";
 import CallIcon from "@material-ui/icons/Call";
-import MailOutlineSharpIcon from "@material-ui/icons/MailOutlineSharp";
+import EmailIcon from "@material-ui/icons/Email";
 import RoomSharpIcon from "@material-ui/icons/RoomSharp";
+import GetAppIcon from "@material-ui/icons/GetApp";
 import { Tooltip, IconButton } from "@material-ui/core";
 export const Sidebar = () => {
   return (
@@ -23,7 +24,9 @@ export const Sidebar = () => {
       </div>
       <div className="sidebar__contact">
         <IconButton>
-          <MailOutlineSharpIcon />
+          <Tooltip title="m.nsyedaaquib@gmail.com">
+            <EmailIcon />
+          </Tooltip>
         </IconButton>
         <IconButton>
           <Tooltip title="+918971670433">
@@ -31,29 +34,52 @@ export const Sidebar = () => {
           </Tooltip>
         </IconButton>
         <IconButton>
-          <img
-            src="https://i.ibb.co/f11Mk2W/linkedin.png"
-            alt="linkedin"
-            border="0"
-            className="MuiSvgIcon-root"
-          />
+          <Tooltip title="Go to Aaquib's LinkedIn Profile">
+            <a href="https://www.linkedin.com/in/syed-aaquib-a8135479/">
+              <img
+                src="https://i.ibb.co/KsLQ6Bc/icons8-linkedin-96.png"
+                alt="linkedin"
+                border="0"
+                className="MuiSvgIcon-root linkedin"
+              />
+            </a>
+          </Tooltip>
         </IconButton>
         <IconButton>
-          <img
-            src="https://i.ibb.co/prRjZTn/Git-Hub-Mark-64px.png"
-            alt="Git-Hub-Mark-64px"
-            border="0"
-            className="MuiSvgIcon-root "
-          />
+          <Tooltip title="Go to Aaquib's Github">
+            <a href="https://github.com/AaquibSyed">
+              <img
+                src="https://i.ibb.co/0c32T4p/icons8-github-100.png"
+                alt="Git-Hub-Mark-64px"
+                border="0"
+                className="MuiSvgIcon-root github"
+              />
+            </a>
+          </Tooltip>
         </IconButton>
       </div>
       <div className="sidebar__links">
-        <Link to="/skills">
-          <li>Skills</li>
-        </Link>
-        <Link to="/projects">
-          <li>Projects</li>
-        </Link>
+        <div className="link__div">
+          <Link to="/">
+            <h3 className="link__text">About</h3>
+          </Link>{" "}
+        </div>
+        <div className="link__div">
+          <Link to="/skills">
+            <h3 className="link__text">Skills</h3>
+          </Link>{" "}
+        </div>
+        <div className="link__div">
+          <Link to="/projects">
+            <h3 className="link__text">Projects</h3>
+          </Link>{" "}
+        </div>
+        <div className="link__div download__resume">
+          <GetAppIcon className="download__icon" />
+          <Link to="/#">
+            <h3 className="link__text">Resume</h3>
+          </Link>
+        </div>
       </div>
     </div>
   );

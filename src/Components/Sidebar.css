@@ -3,6 +3,14 @@
   width: 1.5rem;
   object-fit: contain;
 }
+.overlay {
+  position: absolute;
+  top: 0.7rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  background: rgba(36, 89, 139, 0.82);
+  overflow: hidden;
+}
 
 .sidebar__avatar {
   margin: 1rem;
@@ -37,6 +45,13 @@
   border-bottom: 1px solid rgba(213, 238, 238, 0.4);
 }
 
+h2,
+p {
+  color: #426696;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
 .sidebar__location {
   display: flex;
 }
@@ -46,11 +61,59 @@
 }
 
 .MuiSvgIcon-root {
-  color: black;
+  color: #426696;
   width: 1.5rem;
   height: 1.5rem;
 }
+.github {
+  height: 2rem !important;
+  width: 2rem !important;
+}
+.linkedin {
+  height: 1.7rem !important;
+  width: 1.7rem !important;
+}
 
 .MuiButtonBase-root :hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
+  transition: 0.01s transform ease-in;
+}
+
+.sidebar__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.link__text {
+  margin: 1rem 0rem;
+  padding: 0.1rem 0.5rem;
+  color: #426696;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.link__text:hover {
+  color: #060b11;
+}
+.sidebar__links > div > a {
+  text-decoration: none;
+}
+
+.sidebar__links > div {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-bottom: 1px solid rgba(213, 238, 238, 0.5);
+}
+
+.download__resume {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.download__icon:hover {
+  color: #060b11;
 }
