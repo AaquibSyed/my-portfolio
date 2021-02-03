@@ -15,6 +15,7 @@
 .app_content {
   background: white;
   min-height: 95vh;
+  max-height: 95vh;
   width: 95vw;
   background: linear-gradient(
     to right bottom,

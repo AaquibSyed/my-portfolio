@@ -1,0 +1,50 @@
+.skills {
+  width: 100%;
+  overflow: scroll;
+}
+
+.skills__Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
+  width: 90%;
+}
+
+.skills__bar {
+  width: 100%;
+  height: 1.2rem;
+  display: inline-block;
+  border-radius: 16px;
+  background-color: grey;
+  overflow: hidden;
+  box-shadow: 0.1rem 0.2rem 0.1rem 0rem rgba(0, 0, 0, 0.6);
+}
+
+.skills__detail {
+  height: 100%;
+  background-color: #6cdbeb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sixty {
+  width: 60%;
+}
+.seventy {
+  width: 70%;
+}
+
+.skills__name {
+  z-index: 100;
+  color: #060b11;
+  font-size: 0.5rem;
+  margin-left: 0.5rem;
+  font-weight: bolder;
+}
+
+.skills__image {
+  width: 3.5rem;
+  height: 3.5rem;
+  object-fit: cover;
+}
