@@ -47,7 +47,7 @@ const skills = [
     name: "C#",
     percentage: "sixty",
     className: "skills__detail",
-    imgURL: "https://i.ibb.co/wLPnQ6H/html5-logo.png",
+    imgURL: "https://i.ibb.co/bmrfp8t/c.png",
   },
   {
     name: "Photoshop",

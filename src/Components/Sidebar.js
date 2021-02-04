@@ -37,7 +37,7 @@ export const Sidebar = () => {
           <Tooltip title="Go to Aaquib's LinkedIn Profile">
             <a href="https://www.linkedin.com/in/syed-aaquib-a8135479/">
               <img
-                src="https://i.ibb.co/KsLQ6Bc/icons8-linkedin-96.png"
+                src="https://i.ibb.co/SysKMJq/linkedIN.png"
                 alt="linkedin"
                 border="0"
                 className="MuiSvgIcon-root linkedin"
