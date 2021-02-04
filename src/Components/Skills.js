@@ -1,5 +1,7 @@
 import React from "react";
 import "./Skills.css";
+import Fade from "react-reveal/Fade";
+
 const skills = [
   {
     name: "HTML5",
@@ -71,26 +73,28 @@ const skills = [
 
 export const Skills = () => {
   return (
-    <div className="skills__main">
-      <div className="header">
-        <h1>SKILLS</h1>
-      </div>
-      <div className="skills">
-        {skills.map((skill) => (
-          <div className="skills__Container">
-            <img
-              src={skill.imgURL}
-              className="skills__image"
-              alt={skill.name}
-            />
-            <div className="skills__bar">
-              <div className={`${skill.className} ${skill.percentage}`}>
-                <p className="skills__name">{skill.name}</p>
+    <Fade>
+      <div className="skills__main">
+        <div className="header">
+          <h1>SKILLS</h1>
+        </div>
+        <div className="skills">
+          {skills.map((skill) => (
+            <div className="skills__Container">
+              <img
+                src={skill.imgURL}
+                className="skills__image"
+                alt={skill.name}
+              />
+              <div className="skills__bar">
+                <div className={`${skill.className} ${skill.percentage}`}>
+                  <p className="skills__name">{skill.name}</p>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+    </Fade>
   );
 };
