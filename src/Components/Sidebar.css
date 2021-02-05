@@ -26,10 +26,18 @@
     rgba(255, 255, 255, 0.7),
     rgba(255, 255, 255, 0.3)
   );
+  min-width: fit-content;
+  min-height: fit-content;
+  overflow: scroll;
   flex: 0.2;
+}
+.sidebar::-webkit-scrollbar {
+  display: none;
+  width: 0px;
 }
 
 .sidebar__user {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,12 +66,12 @@ p {
   height: 1.5rem;
 }
 .github {
-  height: 2rem !important;
-  width: 2rem !important;
+  height: 2.2rem !important;
+  width: 2.2rem !important;
 }
 .linkedin {
-  height: 1.7rem !important;
-  width: 1.7rem !important;
+  height: 1.9rem !important;
+  width: 1.9rem !important;
 }
 
 .MuiButtonBase-root :hover {

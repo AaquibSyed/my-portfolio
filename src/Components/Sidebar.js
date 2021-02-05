@@ -7,10 +7,6 @@ import RoomSharpIcon from "@material-ui/icons/RoomSharp";
 import VisibilityIcon from "@material-ui/icons/Visibility";
 import { Tooltip, IconButton } from "@material-ui/core";
 export const Sidebar = () => {
-  const downloadResume = (e) => {
-    e.preventDefault();
-    window.location.href = "./a.pdf";
-  };
   return (
     <div className="sidebar">
       <div className="sidebar__user">
@@ -78,9 +74,9 @@ export const Sidebar = () => {
             <h3 className="link__text">Projects</h3>
           </Link>{" "}
         </div>
-        <div className="link__div download__resume" onClick={downloadResume}>
+        <div className="link__div download__resume">
           <VisibilityIcon className="download__icon" />
-          <Link to="/#">
+          <Link to="/a.pdf" target="_blank">
             <h3 className="link__text">Resume</h3>
           </Link>
         </div>
