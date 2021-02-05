@@ -23,6 +23,18 @@ const projects = [
     hostURL: "https://covid19-tracker-aaq.web.app",
     gitHubURL: "https://github.com/AaquibSyed/Covid19tracker",
   },
+  {
+    name: "COVID 19 Tracker",
+    imgURL: "https://i.ibb.co/f1WtTT1/Covid19-Tracker-1.jpg",
+    hostURL: "https://covid19-tracker-aaq.web.app",
+    gitHubURL: "https://github.com/AaquibSyed/Covid19tracker",
+  },
+  {
+    name: "COVID 19 Tracker",
+    imgURL: "https://i.ibb.co/f1WtTT1/Covid19-Tracker-1.jpg",
+    hostURL: "https://covid19-tracker-aaq.web.app",
+    gitHubURL: "https://github.com/AaquibSyed/Covid19tracker",
+  },
 ];
 
 export const Projects = () => {

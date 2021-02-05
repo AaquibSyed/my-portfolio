@@ -3,6 +3,7 @@
   flex-direction: column;
   width: 100%;
   overflow: hidden;
+  flex: 0.8;
 }
 .skills {
   width: 100%;

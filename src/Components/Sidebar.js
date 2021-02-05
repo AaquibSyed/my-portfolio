@@ -4,9 +4,13 @@ import { Link } from "react-router-dom";
 import CallIcon from "@material-ui/icons/Call";
 import EmailIcon from "@material-ui/icons/Email";
 import RoomSharpIcon from "@material-ui/icons/RoomSharp";
-import GetAppIcon from "@material-ui/icons/GetApp";
+import VisibilityIcon from "@material-ui/icons/Visibility";
 import { Tooltip, IconButton } from "@material-ui/core";
 export const Sidebar = () => {
+  const downloadResume = (e) => {
+    e.preventDefault();
+    window.location.href = "./a.pdf";
+  };
   return (
     <div className="sidebar">
       <div className="sidebar__user">
@@ -74,8 +78,8 @@ export const Sidebar = () => {
             <h3 className="link__text">Projects</h3>
           </Link>{" "}
         </div>
-        <div className="link__div download__resume">
-          <GetAppIcon className="download__icon" />
+        <div className="link__div download__resume" onClick={downloadResume}>
+          <VisibilityIcon className="download__icon" />
           <Link to="/#">
             <h3 className="link__text">Resume</h3>
           </Link>

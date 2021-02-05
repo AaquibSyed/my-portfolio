@@ -3,28 +3,33 @@
   flex-direction: column;
   width: 100%;
   overflow: hidden;
+  flex: 0.8;
 }
 
 .project__container {
   height: 100%;
   overflow: scroll;
-  display: flex;
   display: grid;
-  grid-template-columns: repeat(auto, 0.5fr 0.5fr);
-  grid-gap: 1rem;
-  margin: 1rem;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 20rem));
+  grid-gap: 2rem;
 }
 .project__detail {
+  margin-top: 0.6rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: auto;
-  width: 100%;
+  margin-left: 1rem;
+  height: 20rem;
+  width: 20rem;
+  box-shadow: 0.5rem 0.4rem 0.7rem 0.2rem rgba(35, 48, 110, 0.788);
 }
 .project__detail > img {
-  width: 25rem;
-  height: 25rem;
+  width: 18rem;
+  height: 18rem;
   object-fit: contain;
 }
 .project__options {
@@ -32,6 +37,12 @@
   display: flex;
   justify-content: space-evenly;
 }
+.project__options .MuiSvgIcon-root {
+  margin-bottom: 0.7rem;
+  border-radius: 50%;
+  box-shadow: 0.1rem 0.1rem 0.2rem 0.1rem #03070649;
+}
 .MuiSvgIcon-root:hover {
   transform: scale(1.2);
+  border-radius: 50%;
 }
