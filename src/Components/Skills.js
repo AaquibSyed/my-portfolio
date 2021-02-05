@@ -1,6 +1,7 @@
 import React from "react";
 import "./Skills.css";
 import Fade from "react-reveal/Fade";
+import Zoom from "react-reveal/Zoom";
 
 const skills = [
   {
@@ -80,18 +81,20 @@ export const Skills = () => {
         </div>
         <div className="skills">
           {skills.map((skill) => (
-            <div className="skills__Container">
-              <img
-                src={skill.imgURL}
-                className="skills__image"
-                alt={skill.name}
-              />
-              <div className="skills__bar">
-                <div className={`${skill.className} ${skill.percentage}`}>
-                  <p className="skills__name">{skill.name}</p>
+            <Zoom top cascade>
+              <div className="skills__Container">
+                <img
+                  src={skill.imgURL}
+                  className="skills__image"
+                  alt={skill.name}
+                />
+                <div className="skills__bar">
+                  <div className={`${skill.className} ${skill.percentage}`}>
+                    <p className="skills__name">{skill.name}</p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </Zoom>
           ))}
         </div>
       </div>
