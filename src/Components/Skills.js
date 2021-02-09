@@ -1,7 +1,6 @@
 import React from "react";
 import "./Skills.css";
 import Fade from "react-reveal/Fade";
-import Zoom from "react-reveal/Zoom";
 
 const skills = [
   {
@@ -92,7 +91,7 @@ export const Skills = () => {
         </div>
         <div className="skills">
           {skills.map((skill) => (
-            <Zoom top cascade>
+            <Fade top cascade>
               <div className="skills__Container">
                 <img
                   src={skill.imgURL}
@@ -105,7 +104,7 @@ export const Skills = () => {
                   </div>
                 </div>
               </div>
-            </Zoom>
+            </Fade>
           ))}
         </div>
       </div>

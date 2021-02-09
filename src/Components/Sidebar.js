@@ -6,7 +6,13 @@ import EmailIcon from "@material-ui/icons/Email";
 import RoomSharpIcon from "@material-ui/icons/RoomSharp";
 import VisibilityIcon from "@material-ui/icons/Visibility";
 import { Tooltip, IconButton } from "@material-ui/core";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+
 export const Sidebar = () => {
+  const viewResume = () => {
+    window.location.href = "/Syed_Aaquib_MN_webEngineer_Resume_latest.pdf";
+  };
   return (
     <div className="sidebar">
       <div className="sidebar__user">
@@ -34,26 +40,16 @@ export const Sidebar = () => {
           </Tooltip>
         </IconButton>
         <IconButton>
-          <Tooltip title="Go to Aaquib's LinkedIn Profile">
-            <a href="https://www.linkedin.com/in/syed-aaquib-a8135479/">
-              <img
-                src="https://i.ibb.co/SysKMJq/linkedIN.png"
-                alt="linkedin"
-                border="0"
-                className="MuiSvgIcon-root linkedin"
-              />
+          <Tooltip title="Go to Aaquib's Github">
+            <a href="https://github.com/AaquibSyed">
+              <GitHubIcon />
             </a>
           </Tooltip>
         </IconButton>
         <IconButton>
-          <Tooltip title="Go to Aaquib's Github">
-            <a href="https://github.com/AaquibSyed">
-              <img
-                src="https://i.ibb.co/0c32T4p/icons8-github-100.png"
-                alt="Git-Hub-Mark-64px"
-                border="0"
-                className="MuiSvgIcon-root github"
-              />
+          <Tooltip title="Go to Aaquib's LinkedIn Profile">
+            <a href="https://www.linkedin.com/in/syed-aaquib-a8135479/">
+              <LinkedInIcon fontSize="large" />
             </a>
           </Tooltip>
         </IconButton>
@@ -74,9 +70,9 @@ export const Sidebar = () => {
             <h3 className="link__text">Projects</h3>
           </Link>{" "}
         </div>
-        <div className="link__div download__resume">
+        <div className="link__div download__resume" onClick={viewResume}>
           <VisibilityIcon className="download__icon" />
-          <Link to="/Syed_Aaquib_MN_webEngineer_Resume_latest.pdf">
+          <Link to="/#">
             <h3 className="link__text">Resume</h3>
           </Link>
         </div>
