@@ -76,7 +76,7 @@ export const Sidebar = () => {
         </div>
         <div className="link__div download__resume">
           <VisibilityIcon className="download__icon" />
-          <Link to="/a.pdf" target="_blank">
+          <Link to="/Syed_Aaquib_MN_webEngineer_Resume_latest.pdf">
             <h3 className="link__text">Resume</h3>
           </Link>
         </div>
