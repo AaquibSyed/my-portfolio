@@ -61,17 +61,9 @@ p {
 }
 
 .MuiSvgIcon-root {
-  color: #426696;
+  color: #28466d;
   width: 1.5rem;
   height: 1.5rem;
-}
-.github {
-  height: 2.2rem !important;
-  width: 2.2rem !important;
-}
-.linkedin {
-  height: 1.9rem !important;
-  width: 1.9rem !important;
 }
 
 .MuiButtonBase-root :hover {
