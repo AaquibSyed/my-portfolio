@@ -22,11 +22,13 @@ export const Sidebar = () => {
           alt="avatar1"
           border="0"
         />
-        <h2>Syed Aaquib</h2>
-        <span className="sidebar__location">
-          <RoomSharpIcon />
-          <p>Hyderabad</p>
-        </span>
+        <div className="sidebar__detail">
+          <h2>Syed Aaquib</h2>
+          <span className="sidebar__location">
+            <RoomSharpIcon />
+            <h6>Hyderabad</h6>
+          </span>
+        </div>
       </div>
       <div className="sidebar__contact">
         <IconButton>

@@ -1,0 +1,6 @@
+@media screen and (max-width: 768px) {
+  .about {
+    flex: 0.2;
+    margin-top: 10rem;
+  }
+}

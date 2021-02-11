@@ -71,3 +71,10 @@
   transform: scale(0.8);
   box-shadow: inset 0.2rem 0.2rem 0.8rem 0rem rgba(144, 229, 235, 0.904);
 }
+
+@media screen and (max-width: 768px) {
+  .skills__main {
+    flex: 0.2;
+    margin-top: 10rem;
+  }
+}
