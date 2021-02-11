@@ -146,8 +146,15 @@ h6 {
     grid-area: links;
   }
   .link__div {
-    width: 100%;
-    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0.2rem;
+    height: 2.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    margin-left: 0.2rem;
+    border-radius: 1rem;
     border-right: 0.2rem solid rgba(56, 122, 165, 0.164);
     border-left: 0.2rem solid rgba(174, 174, 185, 0.164);
   }
@@ -169,5 +176,9 @@ h6 {
   h6 {
     font-size: 0.8rem;
     font-weight: 200;
+  }
+  .link__text {
+    font-size: 0.5rem;
+    font-weight: normal;
   }
 }
