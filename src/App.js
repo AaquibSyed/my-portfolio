@@ -1,6 +1,7 @@
 import "./App.css";
 import { Sidebar, Projects, Skills } from "./Components";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import About from "./Components/About";
 
 function App() {
   return (
@@ -12,6 +13,9 @@ function App() {
         <Router>
           <Sidebar />
           <Switch>
+            <Route path="/" exact>
+              <About />
+            </Route>
             <Route path="/projects" exact>
               <Projects />
             </Route>
