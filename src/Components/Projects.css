@@ -71,5 +71,13 @@
   .projects__main {
     flex: 0.2;
     margin-top: 10rem;
+    width: 100%;
+  }
+  .project__container {
+    width: 100%;
+  }
+  .project__detail {
+    width: auto;
+    height: auto;
   }
 }
