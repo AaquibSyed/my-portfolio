@@ -112,12 +112,23 @@ h6 {
 .download__icon:hover {
   color: #060b11;
 }
+.sidebar__darkSwitch {
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: black;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  margin-left: 45%;
+}
 
 @media screen and (max-width: 768px) {
   .sidebar {
     width: 100%;
     display: grid;
-    grid-template-columns: 2fr 0.5fr;
+    grid-template-columns: 1fr 0.2fr;
     grid-template-rows: 0.1fr;
     grid-template-areas:
       "avatar contact"
@@ -136,6 +147,10 @@ h6 {
 
   .sidebar__contact {
     grid-area: contact;
+    display: flex;
+    justify-self: flex-start;
+    align-self: flex-start;
+    height: auto;
   }
   .sidebar__links {
     width: 100%;
@@ -180,5 +195,8 @@ h6 {
   .link__text {
     font-size: 0.5rem;
     font-weight: bold;
+  }
+  .sidebar__darkSwitch {
+    display: none;
   }
 }
