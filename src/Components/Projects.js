@@ -39,7 +39,7 @@ const projects = [
   {
     name: "Quiz Cards",
     imgURL1: "./projectScreens/quizcards1.JPG",
-    imgURL2: "./projectScreens/quzcards2.JPG",
+    imgURL2: "./projectScreens/quizcards2.JPG",
     hostURL: "https://aaquib-quizcards.web.app",
     gitHubURL: "https://github.com/AaquibSyed/QuizCards",
   },
