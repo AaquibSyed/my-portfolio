@@ -19,7 +19,7 @@ export const Sidebar = () => {
       <div className="sidebar__user">
         <img
           className="sidebar__avatar"
-          src="https://i.ibb.co/VMksd9c/avatar1.png"
+          src="./myProfile.png"
           alt="avatar1"
           border="0"
         />
