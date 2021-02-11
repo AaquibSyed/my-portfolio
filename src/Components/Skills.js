@@ -1,6 +1,7 @@
 import React from "react";
 import "./Skills.css";
 import Fade from "react-reveal/Fade";
+import uuid from "react-uuid";
 
 const skills = [
   {
@@ -80,7 +81,7 @@ export const Skills = () => {
         </div>
         <div className="skills">
           {skills.map((skill) => (
-            <Fade top cascade>
+            <Fade top cascade key={uuid()}>
               <div className="skills__Container">
                 <img
                   src={skill.imgURL}

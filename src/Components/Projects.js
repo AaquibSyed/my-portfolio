@@ -6,7 +6,7 @@ import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
-
+import uuid from "react-uuid";
 const projects = [
   {
     name: "COVID-19 Tracker",
@@ -75,7 +75,7 @@ export const Projects = () => {
         </div>
         <div className="project__container">
           {projects.map((project) => (
-            <Zoom top cascade>
+            <Zoom top cascade key={uuid()}>
               <div className="project__detail">
                 {/* pasted here */}
                 <Carousel>
