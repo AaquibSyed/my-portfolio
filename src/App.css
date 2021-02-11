@@ -26,12 +26,17 @@
 }
 
 .app {
+  position: relative;
   min-height: 100vh;
   background: linear-gradient(to right top, #65dfc9, #6cdbeb);
   font-family: Poppins, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.app__darkSwitch {
+  display: none;
 }
 
 .app_content {
@@ -126,4 +131,25 @@
     font-size: 0.5rem;
     max-height: 1.5rem;
   }
+  .app__darkSwitch {
+    display: grid;
+    place-items: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: black;
+    z-index: 222;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+  }
+}
+
+.dark {
+  background: linear-gradient(
+    to right top,
+    rgb(14, 14, 14),
+    rgb(0, 0, 0)
+  ) !important;
 }

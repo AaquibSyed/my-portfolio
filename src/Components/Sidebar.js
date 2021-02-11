@@ -8,7 +8,8 @@ import VisibilityIcon from "@material-ui/icons/Visibility";
 import { Tooltip, IconButton } from "@material-ui/core";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
-
+import Brightness4Icon from "@material-ui/icons/Brightness4";
+import { switchDarkMode } from "./../App";
 export const Sidebar = () => {
   const viewResume = () => {
     window.location.href = "/Syed_Aaquib_MN_webEngineer_Resume_latest.pdf";
@@ -78,6 +79,9 @@ export const Sidebar = () => {
             <h3 className="link__text">Resume</h3>
           </Link>
         </div>
+      </div>
+      <div className="sidebar__darkSwitch" onClick={switchDarkMode}>
+        <Brightness4Icon></Brightness4Icon>
       </div>
     </div>
   );

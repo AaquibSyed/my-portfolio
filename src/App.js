@@ -2,7 +2,12 @@ import "./App.css";
 import { Sidebar, Projects, Skills } from "./Components";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import About from "./Components/About";
-
+import Brightness4Icon from "@material-ui/icons/Brightness4";
+export const switchDarkMode = () => {
+  document.getElementsByClassName("app")[0].classList.toggle("dark");
+  document.getElementsByClassName("app_content")[0].classList.toggle("dark");
+  document.getElementsByClassName("sidebar")[0].classList.toggle("dark");
+};
 function App() {
   return (
     <div className="app">
@@ -24,6 +29,9 @@ function App() {
             </Route>
           </Switch>
         </Router>
+      </div>
+      <div className="app__darkSwitch" onClick={switchDarkMode}>
+        <Brightness4Icon></Brightness4Icon>
       </div>
     </div>
   );
