@@ -149,7 +149,11 @@
 .dark {
   background: linear-gradient(
     to right top,
-    rgb(14, 14, 14),
+    rgb(36, 33, 33),
     rgb(0, 0, 0)
   ) !important;
+  color: rgb(208, 208, 221) !important;
+}
+.on {
+  background-color: white !important;
 }

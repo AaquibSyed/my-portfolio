@@ -7,6 +7,10 @@ export const switchDarkMode = () => {
   document.getElementsByClassName("app")[0].classList.toggle("dark");
   document.getElementsByClassName("app_content")[0].classList.toggle("dark");
   document.getElementsByClassName("sidebar")[0].classList.toggle("dark");
+  document.getElementsByClassName("app__darkSwitch")[0].classList.toggle("on");
+  document
+    .getElementsByClassName("sidebar__darkSwitch")[0]
+    .classList.toggle("on");
 };
 function App() {
   return (

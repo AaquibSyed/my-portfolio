@@ -103,7 +103,12 @@ h6 {
 .link__div:hover {
   box-shadow: inset 0rem -0.4rem 0.2rem -0.1rem #65dfc93d;
 }
-
+.link__div:hover {
+  background-color: #426696;
+}
+.link__div:hover h3 {
+  color: white;
+}
 .download__resume {
   display: flex;
   align-items: center;
