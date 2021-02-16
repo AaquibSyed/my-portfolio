@@ -12,7 +12,7 @@ import Brightness4Icon from "@material-ui/icons/Brightness4";
 import { switchDarkMode } from "./../App";
 export const Sidebar = () => {
   const viewResume = () => {
-    window.location.href = "/Syed_Aaquib_MN_webEngineer_Resume_latest.pdf";
+    window.location.href = "/AaquibResume.pdf";
   };
   return (
     <div className="sidebar">

@@ -57,13 +57,6 @@ const projects = [
     hostURL: "https://spotify-clone-aaq.web.app",
     gitHubURL: "https://github.com/AaquibSyed/spotify-clone",
   },
-  {
-    name: "Currency converter",
-    imgURL1: "./projectScreens/Covid19Tracker_1.JPG",
-    imgURL2: "./projectScreens/Covid19Tracker_2.JPG",
-    hostURL: "https://aaquib-currency-converter.web.app",
-    gitHubURL: "https://github.com/AaquibSyed/currency-converter",
-  },
 ];
 
 export const Projects = () => {
