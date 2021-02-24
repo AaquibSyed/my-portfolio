@@ -109,7 +109,7 @@
   text-align: center;
   background: inherit;
   color: #426696;
-  height: 8rem;
+  height: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -130,6 +130,8 @@
     place-items: center;
     font-size: 0.5rem;
     max-height: 1.5rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
   }
   .app__darkSwitch {
     display: grid;

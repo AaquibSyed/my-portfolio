@@ -31,6 +31,7 @@
   min-height: fit-content;
   overflow: scroll;
   flex: 0.2;
+  border-radius: 16px;
 }
 .sidebar::-webkit-scrollbar {
   display: none;
@@ -121,13 +122,15 @@ h6 {
 .sidebar__darkSwitch {
   display: grid;
   place-items: center;
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 50%;
   background-color: #041c3b;
   cursor: pointer;
   margin-top: 0.5rem;
-  margin-left: 45%;
+  margin-left: 50%;
+  margin-right: 50%;
+  transform: translate(-50%, 50%);
 }
 
 @media screen and (max-width: 768px) {
@@ -206,3 +209,4 @@ h6 {
     display: none;
   }
 }
+/*  end of media query*/
